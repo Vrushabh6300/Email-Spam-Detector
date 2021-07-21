@@ -8,6 +8,7 @@ Original file is located at
 """
 
 import nltk
+nltk.download('stopwords')
 from nltk.tokenize import RegexpTokenizer, word_tokenize
 from nltk.stem import PorterStemmer
 from nltk.corpus import stopwords
