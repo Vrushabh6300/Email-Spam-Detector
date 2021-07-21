@@ -11,7 +11,6 @@ import nltk
 from nltk.tokenize import RegexpTokenizer, word_tokenize
 from nltk.stem import PorterStemmer
 from nltk.corpus import stopwords
-nltk.download('stopwords')
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
