@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>Spam Detector</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(235, 254, 255);
+        }
+
+        h2 {
+            text-align: center;
+            font-family: monospace;
+        }
+
+        .container {
+            padding: 5px;
+            width: 100%;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #test-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #test-mail {
+            width: 240%;
+            height: 200px;
+            border: 3px solid #8fdfff;
+            border-radius: 5px;
+        }
+
+        #test-mail:active, #test-mail:focus {
+            border: 3px solid #1bbeff;
+            box-shadow: 0px 10px 15px 0px #a7dfff;
+        }
+
+        #test-button {
+            width: 180px;
+            height: 25px;
+            background-color: #6cffae;
+            border: 1px solid #029444;
+            border-radius: 4px;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Spam Detector</h2>
+
+    <div class="container">
+        <form id="test-form" action="/getTestMail" method="POST" name="test-form">
+            <textarea name="test-mail" placeholder="Paste mail to test" id="test-mail"></textarea><br />
+            <input type="submit" value="Test" id="test-button" />
+        </form>
+    </div>
+</body>
+</html>
