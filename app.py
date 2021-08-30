@@ -14,14 +14,6 @@ prd = pickle.load(open('model.pkl', 'rb'))
 def home():
     return render_template('home.html')
 
-# def showResult(result):
-#     if(result == 'spam'):
-#         flash('This E-mail is a spam!...', 'danger')
-#     else:
-#         flash('This E-mail is not a spam...', 'success')
-#     return render_template('home.html', result=result)
-
-
 @app.route('/getTestMail', methods = ['POST', 'GET'])
 def getTestMail():
     if request.method == 'POST':
